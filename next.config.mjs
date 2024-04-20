@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Static export
-  basePath: "/itsmushfik",
+  // basePath: "/itsmushfik",
   output: "export",
   reactStrictMode: true,
 };

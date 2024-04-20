@@ -28,12 +28,20 @@
         /* @apply bg-clip-text scale-110; */
         @apply scale-110;
         color: white;
-        /* background-image: linear-gradient(
-          to right,
-          rgb(236, 72, 153),
-          rgb(139, 92, 246)
-        ); */
       }
+    }
+  }
+
+  .hero-text {
+    color: transparent;
+    background-image: linear-gradient(
+      to right,
+      rgb(236, 72, 153),
+      rgb(139, 92, 246)
+    );
+    &::after {
+      content: "|";
+      color: white;
     }
   }
 }
