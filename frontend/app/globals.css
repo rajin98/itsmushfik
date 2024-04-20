@@ -2,32 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --color-primary: 255 115 179;
+    --color-secondary: 111 114 185;
+  }
+
+  body {
+    @apply bg-blue-dark max-w-6xl;
+  }
+
+  .body {
+    @apply max-w-screen-lg m-auto shadow-sm;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@layer components {
+  .nav-link {
+    @apply flex  mx-2;
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    a {
+      @apply p-4 text-yellow transition ease-in-out duration-100 font-bold;
+
+      &:hover {
+        /* @apply bg-clip-text scale-110; */
+        @apply scale-110;
+        color: white;
+        /* background-image: linear-gradient(
+          to right,
+          rgb(236, 72, 153),
+          rgb(139, 92, 246)
+        ); */
+      }
+    }
   }
 }
