@@ -30,13 +30,24 @@ const config: Config = {
     },
     extend: {
       backgroundImage: {
+        "center-glow":
+          "radial-gradient(600px at 50% 50%, rgba(29, 78, 216, 0.15), transparent 60%)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "cursor-pulse": "cursorpulse 0.5s linear infinite",
+      },
+      keyframes: {
+        cursorpulse: {
+          "0%,60%,100%": { opacity: "0" },
+          "65%,95%": { opacity: "1" },
+        },
+      },
     },
     fontFamily: {
-      sans: ["Ubuntu", "sans-serif"],
+      sans: ["var(--font-maven)"],
       serif: ["Red Hat Mono", "serif"],
     },
   },

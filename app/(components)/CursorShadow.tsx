@@ -11,8 +11,8 @@ export default function CursorShadow({
   const [posY, setposY] = useState(0);
 
   function moveShadow(e: React.MouseEvent) {
-    setposX(posX + (e.pageX - posX));
-    setposY(posY + (e.pageY - posY));
+    setposX(e.pageX);
+    setposY(e.pageY);
   }
 
   return (
@@ -20,7 +20,7 @@ export default function CursorShadow({
       onMouseMove={moveShadow}
       className="fixed inset-0 z-40 transition duration-300"
       style={{
-        background: `radial-gradient(600px at ${posX}px ${posY}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        background: `radial-gradient(600px at ${posX}px ${posY}px, rgba(29, 78, 216, 0.10), transparent 40%)`,
       }}
     >
       {children}

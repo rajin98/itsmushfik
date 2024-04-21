@@ -7,7 +7,7 @@ const tags: string[] = [
   "Software Engineer",
   "Full Stack Developer",
   "Cloud Architect",
-  "AI Enthusiast",
+  "ML Enthusiast",
 ];
 
 const Hero = () => {
@@ -37,7 +37,9 @@ const Hero = () => {
           setForwardFlag(0);
           setCurrentTextIndex(tags[currentListIndex].length - 1);
         }, delay * 5);
-        return () => clearTimeout(timeout);
+        return () => {
+          clearTimeout(timeout);
+        };
       } else if (currentTextIndex >= 0 && forwardFlag == 0) {
         const timeout = setTimeout(() => {
           setCurrentText((prevText) => prevText.slice(0, -1));
@@ -58,9 +60,17 @@ const Hero = () => {
   }, [currentListIndex, currentTextIndex, forwardFlag]);
 
   return (
-    <h2 className="flex flex-col mt-12 font-sans font-extrabold min-h-72 bg-gradient-to-t from-blue p-8 rounded-3xl">
-      <div className=" text-3xl text-white">I AM A...</div>
-      <div className="text-6xl hero-text bg-clip-text pb-9">{currentText}</div>
+    <h2
+      className={
+        "flex text-center flex-col mt-[40vh] font-sans font-extrabold min-h-72 p-8 rounded-3xl center-glow"
+      }
+    >
+      <div className=" text-5xl text-white">Hi! I am Mushfik,</div>
+      <div
+        className={"text-6xl hero-text bg-clip-text pb-9 after:content-['|'] "}
+      >
+        {currentText}
+      </div>
     </h2>
   );
 };

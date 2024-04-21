@@ -9,11 +9,12 @@
   }
 
   body {
-    @apply bg-blue-dark max-w-6xl;
+    @apply bg-blue-dark;
+    cursor: none;
   }
 
   .body {
-    @apply max-w-screen-lg m-auto shadow-sm;
+    @apply max-w-screen-xl mx-auto shadow-sm;
   }
 }
 
@@ -32,6 +33,18 @@
     }
   }
 
+  .center-glow {
+    &::before {
+      @apply bg-center-glow;
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+    }
+  }
+
   .hero-text {
     color: transparent;
     background-image: linear-gradient(
@@ -39,6 +52,11 @@
       rgb(236, 72, 153),
       rgb(139, 92, 246)
     );
+
+    &::before {
+      content: "A ";
+      color: white;
+    }
     &::after {
       content: "|";
       color: white;

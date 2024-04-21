@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
-import { useState } from "react";
-import { Inter } from "next/font/google";
 import "./globals.css";
+import CircleCursor from "./(components)/CircleCursor";
 import Nav from "./(components)/Nav";
 import CursorShadow from "./(components)/CursorShadow";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Maven_Pro } from "next/font/google";
+
+const maven = Maven_Pro({
+  subsets: ["latin"],
+  variable: "--font-maven",
+});
 
 export const metadata: Metadata = {
   title: "ItsMushfik",
@@ -19,13 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <CursorShadow>
-          <div className="body">
-            <Nav />
-            {children}
-          </div>
-        </CursorShadow>
+      <body>
+        <CircleCursor />
+        <div className={"body font-sans " + maven.variable}>
+          {/* <Nav /> */}
+          {children}
+        </div>
       </body>
     </html>
   );
