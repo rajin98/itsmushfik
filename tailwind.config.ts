@@ -15,7 +15,8 @@ const config: Config = {
     },
     colors: {
       white: {
-        DEFAULT: "#ffffff",
+        DEFAULT: "#eee",
+        off: "#aaa",
       },
       red: {
         light: "#96505b",
@@ -23,7 +24,9 @@ const config: Config = {
       },
       yellow: "#d9b6a3",
       blue: {
-        DEFAULT: "#324359",
+        DEFAULT: "#79A4D9",
+        light: "#8CBEFB",
+        dull: "#324359",
         dark: "#092126",
       },
       black: "#333333",
@@ -47,7 +50,8 @@ const config: Config = {
       },
     },
     fontFamily: {
-      sans: ["var(--font-maven)"],
+      sans: ["var(--font-raleway)"],
+      header: ["var(--font-maven)"],
       serif: ["Red Hat Mono", "serif"],
     },
   },

@@ -2,6 +2,9 @@
 const nextConfig = {
   // Static export
   // basePath: "/itsmushfik",
+  images: {
+    unoptimized: true,
+  },
   output: "export",
   reactStrictMode: true,
 };

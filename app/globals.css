@@ -14,7 +14,7 @@
   }
 
   .body {
-    @apply max-w-screen-xl mx-auto shadow-sm;
+    @apply max-w-screen-xl mx-auto shadow-sm text-white;
   }
 }
 
@@ -61,5 +61,11 @@
       content: "|";
       color: white;
     }
+  }
+
+  .large-fade-out {
+    @apply transition ease-in duration-200;
+    transform: scale(3);
+    opacity: 0;
   }
 }

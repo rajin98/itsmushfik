@@ -3,13 +3,7 @@ import "./globals.css";
 import CircleCursor from "./(components)/CircleCursor";
 import Nav from "./(components)/Nav";
 import CursorShadow from "./(components)/CursorShadow";
-
-import { Maven_Pro } from "next/font/google";
-
-const maven = Maven_Pro({
-  subsets: ["latin"],
-  variable: "--font-maven",
-});
+import { raleway } from "./(utilities)/fonts";
 
 export const metadata: Metadata = {
   title: "ItsMushfik",
@@ -25,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <CircleCursor />
-        <div className={"body font-sans " + maven.variable}>
+        <div className={`body font-sans ${raleway.variable}`}>
           {/* <Nav /> */}
           {children}
         </div>
