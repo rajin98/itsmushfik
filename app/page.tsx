@@ -2,9 +2,11 @@ import React from "react";
 import Hero from "./(components)/Hero";
 import Tag from "./(components)/Tag";
 import projectData from "../public/data/projects.json";
+import timelineData from "../public/data/timeline.json";
 import ProjectCard from "./(components)/ProjectCard";
 import Section from "./(components)/Section";
 import Link from "next/link";
+import Timeline from "./(components)/Timeline";
 
 const Dashboard = () => {
   const projectItems = projectData.projects.map((project) => {
@@ -22,6 +24,7 @@ const Dashboard = () => {
   return (
     <React.Fragment>
       <Hero />
+      <Timeline itemData={timelineData} />
       <Section title="Projects">
         <div className="flex gap-5 flex-wrap justify-between">
           {projectItems}
@@ -39,6 +42,8 @@ const Dashboard = () => {
           </Link>
         </div>
       </Section>
+
+      <Section title="Graphics Design"></Section>
     </React.Fragment>
   );
 };

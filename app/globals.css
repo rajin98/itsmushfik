@@ -91,4 +91,17 @@
       @apply text-white-off text-ellipsis overflow-hidden;
     }
   }
+
+  .timeline-item {
+    ul {
+      text-align: inherit;
+    }
+    li {
+      &::before {
+        content: "\2022";
+        font-weight: 900;
+        margin-right: 0.75em;
+      }
+    }
+  }
 }

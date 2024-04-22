@@ -24,3 +24,19 @@ interface TagData {
 interface SectionProps {
   title: string;
 }
+
+interface TimelineItemProps {
+  id: number;
+  onLeft?: boolean;
+  isLast?: boolean;
+  className?: string;
+  title: string;
+  subtitle?: string;
+  startDate?: string;
+  endDate?: string;
+  description?: string;
+}
+
+interface TimelineProps {
+  itemData: TimelineItemProps[];
+}

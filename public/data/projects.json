@@ -8,7 +8,7 @@
       "tags": [
         {
           "name": "Java",
-          "iconUrl": "/java.svg"
+          "iconUrl": "./java.svg"
         }
       ]
     },
