@@ -17,7 +17,8 @@ interface TagData {
   name: string;
   version?: string;
   icon?: string;
-  color?: string;
+  iconUrl?: string;
+  className?: string;
 }
 
 interface SectionProps {

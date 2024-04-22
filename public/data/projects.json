@@ -2,10 +2,43 @@
   "projects": [
     {
       "id": 1,
-      "title": "Hello World",
-      "url": "https://google.com",
+      "title": "Course Scheduling Algorithm",
+      "url": "https://github.com/rajin98/course-scheduling-algorithm",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "tags": [{ "name": "ReactJS", "icon": "react" }]
+      "tags": [
+        {
+          "name": "Java",
+          "iconUrl": "/java.svg"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Personal Portfolio Website",
+      "url": "https://github.com/rajin98/itsmushfik",
+      "description": "This website you are currently visiting! This is the first website I have built using NextJS and TailwindCSS.",
+      "tags": [
+        {
+          "name": "Next.js",
+          "icon": "nextdotjs"
+        },
+        {
+          "name": "TailwindCSS",
+          "icon": "tailwindcss"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Tic-Tac-Overflow",
+      "url": "https://github.com/rajin98/Tic-Tac-Overflow",
+      "description": "A command line game of Tic Tac Toe against an unbeatable AI (minimax algorithm). Built on C with an intentional bug, the game is intended as a tutorial for buffer overflow where the user can reach the win condition without playing against the AI.",
+      "tags": [
+        {
+          "name": "C language",
+          "icon": "C"
+        }
+      ]
     }
   ]
 }

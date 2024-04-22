@@ -9,12 +9,8 @@
   }
 
   body {
-    @apply bg-blue-dark;
+    @apply bg-blue-dark cursor-none;
     cursor: none;
-  }
-
-  .body {
-    @apply max-w-screen-xl mx-auto shadow-sm text-white;
   }
 }
 
@@ -38,7 +34,7 @@
       @apply bg-center-glow;
       content: "";
       position: absolute;
-      width: 100vw;
+      width: 99vw;
       height: 100vh;
       top: 0;
       left: 0;
@@ -67,5 +63,32 @@
     @apply transition ease-in duration-200;
     transform: scale(3);
     opacity: 0;
+  }
+
+  .project-card {
+    @apply transition-all ease-in-out;
+
+    &:hover {
+      @apply -translate-y-1;
+
+      h4 {
+        @apply text-blue;
+      }
+      p {
+        /* @apply text-white; */
+      }
+
+      a {
+        @apply cursor-none;
+      }
+    }
+
+    h4 {
+      @apply text-white-off text-xl font-bold;
+    }
+
+    p {
+      @apply text-white-off text-ellipsis overflow-hidden;
+    }
   }
 }

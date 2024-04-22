@@ -17,12 +17,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <CircleCursor />
-        <div className={`body font-sans ${raleway.variable}`}>
-          {/* <Nav /> */}
+      <body className={` shadow-sm text-white font-sans ${raleway.variable}`}>
+        <main className="max-w-screen-xl px-2 mx-auto flex-wrap">
+          <CircleCursor />
           {children}
-        </div>
+        </main>
       </body>
     </html>
   );

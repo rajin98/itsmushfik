@@ -4,6 +4,7 @@ import Tag from "./(components)/Tag";
 import projectData from "../public/data/projects.json";
 import ProjectCard from "./(components)/ProjectCard";
 import Section from "./(components)/Section";
+import Link from "next/link";
 
 const Dashboard = () => {
   const projectItems = projectData.projects.map((project) => {
@@ -22,7 +23,21 @@ const Dashboard = () => {
     <React.Fragment>
       <Hero />
       <Section title="Projects">
-        <div className="flex basis-1/4">{projectItems}</div>
+        <div className="flex gap-5 flex-wrap justify-between">
+          {projectItems}
+        </div>
+        <div className="mt-12 flex">
+          <Link
+            href="https://github.com/rajin98/"
+            className="mx-auto cursor-none"
+          >
+            <Tag
+              className=" hover:-translate-y-1 transition-all hover:bg-blue-dull rounded-md"
+              icon="github"
+              name="Check out my GitHub"
+            />
+          </Link>
+        </div>
       </Section>
     </React.Fragment>
   );

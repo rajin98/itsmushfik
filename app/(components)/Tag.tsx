@@ -1,16 +1,19 @@
 import React from "react";
 import Image from "next/image";
 
-function Tag({ name, version, icon, color }: TagData) {
-  color = color == undefined ? "white" : color;
+function Tag({ name, version, icon, iconUrl, className }: TagData) {
+  if (icon != undefined && iconUrl == undefined) {
+    iconUrl = `https://cdn.simpleicons.org/${icon}/eee`;
+  }
+
   const iconElement =
-    icon != undefined ? (
+    iconUrl != undefined ? (
       <Image
-        className="p-2 bg-black"
-        width={32}
-        height={32}
-        src={`https://cdn.simpleicons.org/${icon}/${color}`}
-        alt={icon}
+        className="py-2 pl-2 text-white"
+        height={28}
+        width={28}
+        src={iconUrl}
+        alt={icon ? icon : ""}
       ></Image>
     ) : null;
 
@@ -20,9 +23,9 @@ function Tag({ name, version, icon, color }: TagData) {
     ) : null;
 
   return (
-    <div className="flex text-sm">
+    <div className={"flex text-sm bg-black " + className}>
       {iconElement}
-      <div className="py-2 pr-2 bg-black">{name}</div>
+      <div className="p-2 ">{name}</div>
       {versionElement}
     </div>
   );
