@@ -18,7 +18,7 @@ function Timeline({ itemData }: TimelineProps) {
     );
   });
 
-  return <div className="flex flex-col gap-3">{items}</div>;
+  return <div className="flex flex-col gap-3 my-12">{items}</div>;
 }
 
 export default Timeline;

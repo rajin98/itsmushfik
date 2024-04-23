@@ -35,15 +35,13 @@ const config: Config = {
       backgroundImage: {
         "center-glow":
           "radial-gradient(600px at 50% 50%, rgba(29, 78, 216, 0.15), transparent 60%)",
-        "small-glow":
-          "radial-gradient(200px at 50% 50%, rgba(29, 78, 216, 0.15), transparent 60%)",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
         "cursor-pulse": "cursorpulse 0.5s linear 1",
-        "slide-up-in": "slideupin 3s linear ",
+        "slide-up-in": "slideupin 2s ease-in ",
       },
       keyframes: {
         cursorpulse: {
@@ -51,13 +49,43 @@ const config: Config = {
           "65%,95%": { opacity: "1" },
         },
         slideupin: {
-          "0%,75%": {
+          "0%,50%": {
             opacity: "0",
             transform: "translateY(3rem)",
           },
           "100%": {
             opacity: "1",
             transform: "translateY(0)",
+          },
+        },
+        slidedownin: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-3rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        slideleftin: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(3rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+        sliderightin: {
+          "0%": {
+            opacity: "0",
+            transform: "translateX(-3rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateX(0)",
           },
         },
       },

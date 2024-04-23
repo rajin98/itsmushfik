@@ -51,11 +51,11 @@
 
     &::before {
       content: "A ";
-      color: white;
+      @apply text-white;
     }
     &::after {
       content: "|";
-      color: white;
+      @apply text-white;
     }
   }
 
@@ -73,9 +73,6 @@
 
       h4 {
         @apply text-blue;
-      }
-      p {
-        /* @apply text-white; */
       }
 
       a {
@@ -102,6 +99,50 @@
         font-weight: 900;
         margin-right: 0.75em;
       }
+    }
+  }
+
+  @keyframes slidein-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slidein-up {
+    0% {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slidein-left {
+    0% {
+      opacity: 0;
+      transform: translateX(3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slidein-right {
+    0% {
+      opacity: 0;
+      transform: translateX(-3rem);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }

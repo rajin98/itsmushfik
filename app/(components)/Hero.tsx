@@ -1,8 +1,9 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import TypeWriterText from "./TypeWriterText";
 import { maven } from "../(utilities)/fonts";
 import Image from "next/image";
+import ScrollAnimation from "./ScrollAnimation";
 
 const tags: string[] = [
   "Software Engineer",
@@ -12,6 +13,7 @@ const tags: string[] = [
 ];
 
 const Hero = () => {
+  const postHero = useRef();
   const year =
     new Date(Date.now()).getFullYear() -
     new Date("October 5 1998").getFullYear();
@@ -33,16 +35,21 @@ const Hero = () => {
         />
       </h2>
 
-      <div className="mt-36 mb-6 text-center text-lg text-white-off animate-slide-up-in">
+      <div className=" mt-48 mb-6 text-center text-base text-white-off animate-slide-up-in">
         Check out what I did in the {year} years of being on this Earth.
       </div>
-      {/* <Image
-        className="mx-auto animate-bounce"
-        src={"/downarrow.svg"}
-        alt="arrow"
-        width={32}
-        height={32}
-      ></Image> */}
+      <ScrollAnimation duration={1} delay={1.5} direction="down">
+        <Image
+          onClick={() =>
+            window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
+          }
+          className="mx-auto animate-bounce"
+          src={"/downarrow.svg"}
+          alt="arrow"
+          width={32}
+          height={32}
+        ></Image>
+      </ScrollAnimation>
     </div>
   );
 };

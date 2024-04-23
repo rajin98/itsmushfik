@@ -40,3 +40,10 @@ interface TimelineItemProps {
 interface TimelineProps {
   itemData: TimelineItemProps[];
 }
+
+interface ScrollAnimationProps {
+  delay: number;
+  duration: number;
+  direction: string;
+  className?: string;
+}
