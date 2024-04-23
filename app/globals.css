@@ -89,6 +89,29 @@
     }
   }
 
+  .cursor-circle {
+    @apply rounded-full border-solid border-2 border-white w-5 h-5;
+  }
+
+  .cursor-triangle {
+    @apply w-3 h-5 border-b-2 block box-border;
+    position: relative;
+    /* transform: scale(var(--ggs, 1)); */
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+
+    &::before {
+      @apply w-[15px] h-[15px] border-l-2 border-t-2 block box-border;
+      content: "";
+      position: absolute;
+      border-bottom: 2px solid transparent;
+      transform: rotate(45deg) skew(10deg, 10deg);
+      left: -1px;
+      bottom: -9px;
+      border-right: 2px solid transparent;
+    }
+  }
+
   .timeline-item {
     ul {
       text-align: inherit;

@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import CircleCursor from "./(components)/CircleCursor";
-import Nav from "./(components)/Nav";
-import CursorShadow from "./(components)/CursorShadow";
 import { raleway } from "./(utilities)/fonts";
+import { CursorContextProvider } from "./(components)/CursorContextProvider";
 
 export const metadata: Metadata = {
   title: "ItsMushfik",
@@ -17,12 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` shadow-sm text-white font-sans ${raleway.variable}`}>
-        <main className="max-w-screen-xl px-2 mx-auto flex-wrap">
-          <CircleCursor />
-          {children}
-        </main>
-      </body>
+      <CursorContextProvider>
+        <body className={` shadow-sm text-white font-sans ${raleway.variable}`}>
+          <main className="max-w-screen-xl px-2 mx-auto flex-wrap">
+            <CircleCursor />
+            {children}
+          </main>
+        </body>
+      </CursorContextProvider>
     </html>
   );
 }
