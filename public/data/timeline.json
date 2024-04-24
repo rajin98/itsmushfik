@@ -1,26 +1,62 @@
 [
   {
     "id": 1,
-    "startDate": "January 2018",
-    "endDate": "January 2018",
-    "title": "Operations Executive",
-    "subtitle": "10 Minute School",
-    "description": "I was part of the Project X Smartbook team. Joining as an intern, I demonstrated unparalleled excellence, earning the title of <strong>Intern of the Month</strong>. Later as the team lead, I overhauled the team's workflow, conducted training sessions on <strong>Front-end Development</strong> that resulted in significant increase in quality and efficieny and also acted."
+    "startDate": "October 1998",
+    "title": "Born",
+    "subtitle": "Brahmanbaria, Bangladesh",
+    "description": "In a small town, in a country tucked away in South Asia."
   },
   {
     "id": 2,
-    "startDate": "January 2019",
-    "endDate": "January 2018",
-    "title": "Marketing Director",
-    "subtitle": "Prism Advertising | University of Calgary",
-    "description": "After getting admitted to the Computer Science program at University of Calgary, I felt it necessary to expand my network into the business side of the campus. I joined the marketing club, PrismA where I designed digital content for dozens of clubs, non-profits and businesses and grew my network."
+    "startDate": "February 2003",
+    "title": "First computer",
+    "subtitle": "Only time I had a CRT monitor",
+    "description": "My grandma gifted me one after she saw how excited I was playing Flash games on my uncle's PC. It very likely changed the trajectory of my career and life."
   },
   {
     "id": 3,
+    "startDate": "June 2011",
+    "title": "Moved to the City",
+    "subtitle": "Dhaka, Bangladesh",
+    "description": "From a pond to a river. I would soon learn the struggles of adapting to the crowded city life where I would have to find my identity again."
+  },
+  {
+    "id": 4,
+    "startDate": "February 2016",
+    "endDate": "January 2018",
+    "title": "Won 2nd prize @ a Science Fair",
+    "subtitle": "Two, actually",
+    "description": "Within a space of two months, participated in two science fairs, at two different schools, in two different categories got the two (2nd) place"
+  },
+  {
+    "id": 5,
+    "startDate": "January 2018",
+    "endDate": "January 2018",
+    "title": "Operations Executive",
+    "subtitle": "@ 10 Minute School",
+    "description": "First ever job right out of high school. It involved content creation, frontend-development on WordPress as well as digital marketing and leadership."
+  },
+  {
+    "id": 6,
+    "startDate": "September 2018",
+    "title": "Universtiy of Calgary",
+    "subtitle": "Calgary, Alberta",
+    "description": "From a river to the ocean. I achieved my dream of studying Computer Science but I was reminded again of the struggles of adapting to a new environment, this time on a whole different continent."
+  },
+  {
+    "id": 7,
+    "startDate": "January 2019",
+    "endDate": "January 2018",
+    "title": "Marketing Director",
+    "subtitle": "@ PrismA | University of Calgary",
+    "description": "As an attempt to expand my network into the business side of the campus at the university, I joined this club where I designed digital content for dozens of clubs, non-profits and businesses."
+  },
+  {
+    "id": 8,
     "startDate": "May 2021",
     "endDate": "January 2018",
     "title": "Software Developer - Intern",
-    "subtitle": "TC Energy",
-    "description": "From the beginning of my undergrad life, I knew I had to get an internship to standout in the field of Software Development and I made that my mission. I got an offer on the very first interview I was invited to and I started my 16-month intership at one of the largest corporations in North America where I honed my skills in <strong>Cloud Computing</strong>"
+    "subtitle": "@ TC Energy",
+    "description": "After building my portfolio for over 3 years of university, I got an offer on the very first interview I was invited to and I started my 16-month intership at one of the largest corporations in North America."
   }
 ]

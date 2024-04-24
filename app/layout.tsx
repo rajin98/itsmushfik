@@ -3,6 +3,7 @@ import "./globals.css";
 import CircleCursor from "./(components)/CircleCursor";
 import { raleway } from "./(utilities)/fonts";
 import { CursorContextProvider } from "./(components)/CursorContextProvider";
+import Footer from "./(components)/Footer";
 
 export const metadata: Metadata = {
   title: "ItsMushfik",
@@ -22,6 +23,7 @@ export default function RootLayout({
             <CircleCursor />
             {children}
           </main>
+          <Footer />
         </body>
       </CursorContextProvider>
     </html>

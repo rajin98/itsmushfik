@@ -23,7 +23,7 @@ function TimelineItem(props: TimelineItemProps) {
   const description =
     props.description != undefined ? (
       <div
-        className={`text-base text-white-off`}
+        className={`text-base text-white-off pb-5 pt-3`}
         dangerouslySetInnerHTML={{ __html: props.description }}
       ></div>
     ) : null;

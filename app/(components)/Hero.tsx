@@ -44,7 +44,7 @@ const Hero = () => {
             window.scrollTo({ top: window.innerHeight, behavior: "smooth" })
           }
           className="mx-auto animate-bounce"
-          src={"/downarrow.svg"}
+          src={"./downarrow.svg"}
           alt="arrow"
           width={32}
           height={32}

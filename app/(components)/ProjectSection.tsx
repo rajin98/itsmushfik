@@ -11,6 +11,7 @@ function ProjectSection() {
     return (
       <ProjectCard
         key={project.id}
+        id={project.id}
         title={project.title}
         description={project.description}
         url={project.url}
@@ -23,9 +24,13 @@ function ProjectSection() {
     <Section title="Projects">
       <div className="flex gap-5 flex-wrap justify-between">{projectItems}</div>
       <div className="mt-12 flex">
-        <CustomLink href="https://github.com/rajin98/" locale="mx-auto ">
+        <CustomLink
+          href="https://github.com/rajin98/"
+          target="_blank"
+          className="mx-auto "
+        >
           <Tag
-            className=" hover:-translate-y-1 transition-all hover:bg-blue-dull rounded-md"
+            className="tag-btn transition-all bg-blue-dull"
             icon="github"
             name="Check out my GitHub"
           />

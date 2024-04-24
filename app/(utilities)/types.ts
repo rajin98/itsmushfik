@@ -7,6 +7,7 @@ interface TypeWriterTextProps {
 }
 
 interface ProjectCardProps {
+  id: number;
   title: string;
   description: string;
   url: string;
@@ -46,4 +47,22 @@ interface ScrollAnimationProps {
   duration: number;
   direction: string;
   className?: string;
+}
+
+interface CustomLinkProps {
+  href: string;
+  target?: string;
+  className?: string;
+}
+
+interface GalleryFrameProps {
+  id: number;
+  className?: string;
+  src: string;
+  alt?: string;
+}
+
+interface ImageGalleryProps {
+  className?: string;
+  images: GalleryFrameProps[];
 }

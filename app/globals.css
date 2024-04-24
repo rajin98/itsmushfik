@@ -105,10 +105,20 @@
       content: "";
       position: absolute;
       border-bottom: 2px solid transparent;
+      border-right: 2px solid transparent;
       transform: rotate(45deg) skew(10deg, 10deg);
       left: -1px;
       bottom: -9px;
-      border-right: 2px solid transparent;
+    }
+  }
+
+  .tag-btn {
+    @apply rounded-md;
+    &:hover {
+      @apply -translate-y-1 bg-blue-light text-black;
+      img {
+        filter: invert(1);
+      }
     }
   }
 
@@ -121,6 +131,20 @@
         content: "\2022";
         font-weight: 900;
         margin-right: 0.75em;
+      }
+    }
+  }
+
+  .gallery-frame {
+    @apply overflow-hidden rounded-md;
+
+    img {
+      @apply transition-transform;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
       }
     }
   }

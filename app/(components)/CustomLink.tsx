@@ -5,13 +5,13 @@ import { PropsWithChildren } from "react";
 import Link, { LinkProps } from "next/link";
 import { CursorContext } from "./CursorContextProvider";
 
-function CustomLink(props: PropsWithChildren<LinkProps>) {
+function CustomLink(props: PropsWithChildren<CustomLinkProps>) {
   const { cursor, setCursor } = useContext(CursorContext);
   return (
     <Link
-      className={"cursor-none " + props.locale}
+      className={"cursor-none " + props.className}
       href={props.href}
-      target="_blank"
+      target={props.target}
       onMouseEnter={() => setCursor("cursor-triangle")}
       onMouseLeave={() => setCursor("cursor-circle")}
     >

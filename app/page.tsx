@@ -4,6 +4,7 @@ import timelineData from "../public/data/timeline.json";
 import Section from "./(components)/Section";
 import Timeline from "./(components)/Timeline";
 import ProjectSection from "./(components)/ProjectSection";
+import GraphicsSection from "./(components)/GraphicsSection";
 
 const Dashboard = () => {
   return (
@@ -12,7 +13,7 @@ const Dashboard = () => {
       <span id="after-hero" />
       <Timeline itemData={timelineData} />
       <ProjectSection />
-      <Section title="Graphics Design"></Section>
+      <GraphicsSection />
     </React.Fragment>
   );
 };

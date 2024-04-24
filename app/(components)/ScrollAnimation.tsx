@@ -3,27 +3,42 @@ import React, { useEffect, PropsWithChildren, useRef, useState } from "react";
 
 function ScrollAnimation(props: PropsWithChildren<ScrollAnimationProps>) {
   const style = {
-    animation: `${props.duration}s ease-in ${props.delay}s 1 normal forwards running slidein-${props.direction}`,
+    animation: `${props.duration}s ease-in ${props.delay}s 1 normal none running slidein-${props.direction}`,
   };
-  const [isIntersecting, setIntersecting] = useState(false);
+  const delay = props.delay * 1001;
+  const [isIntersecting, setIsIntersecting] = useState(false);
+  const [opacity, setOpacity] = useState("opacity-0");
   const ref = useRef(null);
 
+  // I fucking hate this fuck this pieece of tshi
   useEffect(() => {
+    console.log("observer created");
+
     const observer = new IntersectionObserver(([entry]) => {
-      if (!isIntersecting) {
-        setIntersecting(entry.isIntersecting);
+      if (entry.isIntersecting == true && isIntersecting == false) {
+        console.log("element observed");
+        setIsIntersecting(true);
+        observer.disconnect();
       }
     });
 
     observer.observe(ref.current!);
-    return () => {
-      observer.disconnect();
-    };
-  }, [ref, isIntersecting]);
+    return () => {};
+  }, []);
+
+  useEffect(() => {
+    if (isIntersecting == true) {
+      const timer = setTimeout(() => setOpacity("opacity-1"), delay);
+      return () => {
+        clearTimeout(timer);
+      };
+    }
+    return () => {};
+  }, [isIntersecting]);
 
   return (
     <div
-      className={props.className + " opacity-0"}
+      className={`${props.className} ${opacity}`}
       ref={ref}
       style={isIntersecting ? style : {}}
     >

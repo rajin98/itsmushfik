@@ -9,7 +9,9 @@ export default function CircleCursor() {
 
   return (
     <div
-      className={"fixed z-40 shadow-md pointer-events-none " + cursor}
+      className={
+        "fixed z-40 pointer-events-none before:transition-transform " + cursor
+      }
       style={{
         top: `${mousePosition.y - 10}px`,
         left: `${mousePosition.x - 10}px`,

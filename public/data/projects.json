@@ -2,13 +2,21 @@
   "projects": [
     {
       "id": 1,
-      "title": "Course Scheduling Algorithm",
-      "url": "https://github.com/rajin98/course-scheduling-algorithm",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "title": "Metadata Automated Review Checker",
+      "url": "https://github.com/rajin98/",
+      "description": "Project at TC Energy which involved scaling and improved a cloud-native serverless solution for verifying data using AI on engineering drawings.",
       "tags": [
         {
-          "name": "Java",
-          "iconUrl": "./java.svg"
+          "name": "AWS",
+          "icon": "amazonaws"
+        },
+        {
+          "name": "Power Automate",
+          "icon": "powerautomate"
+        },
+        {
+          "name": "Python",
+          "icon": "python"
         }
       ]
     },
@@ -16,7 +24,7 @@
       "id": 2,
       "title": "Personal Portfolio Website",
       "url": "https://github.com/rajin98/itsmushfik",
-      "description": "This website you are currently visiting! This is the first website I have built using NextJS and TailwindCSS.",
+      "description": "This website that you are currently visiting! This is the first webapp I have built using the following tech stack and with no other dependencies.",
       "tags": [
         {
           "name": "Next.js",
@@ -30,13 +38,49 @@
     },
     {
       "id": 3,
+      "title": "Traffic Collision Rules Mining",
+      "url": "https://github.com/rajin98/CPSC544-Project",
+      "description": "Machine learning project using Apriori Algorithm to gain insights from the traffic collision database of Canada.",
+      "tags": [
+        {
+          "name": "Java",
+          "iconUrl": "./java.svg"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Course Scheduling Algorithm",
+      "url": "https://github.com/rajin98/course-scheduling-algorithm",
+      "description": "An AI project that uses Set-based Search to find an optimal time slot assignment for courses in an academic term.",
+      "tags": [
+        {
+          "name": "Java",
+          "iconUrl": "./java.svg"
+        }
+      ]
+    },
+    {
+      "id": 4,
       "title": "Tic-Tac-Overflow",
       "url": "https://github.com/rajin98/Tic-Tac-Overflow",
-      "description": "A command line game of Tic Tac Toe against an unbeatable AI (minimax algorithm). Built on C with an intentional bug, the game is intended as a tutorial for buffer overflow where the user can reach the win condition without playing against the AI.",
+      "description": "A 'buggy' game of Tic Tac Toe against an unbeatable AI (minimax algorithm), intended as a tutorial for buffer overflow.",
       "tags": [
         {
           "name": "C language",
           "icon": "C"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Course Enrollment Bot",
+      "url": "https://github.com/rajin98/uofc-course-bot",
+      "description": "Script that acts as an API for the University of Calgary student portal which can poll availability of courses and enroll the user to a course.",
+      "tags": [
+        {
+          "name": "Python",
+          "icon": "Python"
         }
       ]
     }
