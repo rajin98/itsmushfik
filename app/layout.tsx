@@ -17,7 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <CursorContextProvider>
-        <body className={` shadow-sm text-white font-sans ${raleway.variable}`}>
+        <body
+          className={`md:text-base text-sm shadow-sm text-white font-sans ${raleway.variable}`}
+        >
           <main className="max-w-screen-xl px-2 mx-auto flex-wrap">
             <CircleCursor />
             {children}

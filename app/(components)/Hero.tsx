@@ -7,7 +7,7 @@ import ScrollAnimation from "./ScrollAnimation";
 
 const tags: string[] = [
   "Software Engineer",
-  "Full Stack Developer",
+  "FullStack Developer",
   "Cloud Architect",
   "ML Enthusiast",
 ];
@@ -23,10 +23,12 @@ const Hero = () => {
       <h2
         className={`flex text-center flex-col pt-[45vh] font-header ${maven.variable} font-extrabold min-h-72 p-8 rounded-3xl center-glow pointer-events-none before:pointer-events-none`}
       >
-        <div className="text-5xl text-white">Hi! I am Mushfik,</div>
+        <div className="text-2xl md:text-3xl lg:text-5xl text-white">
+          Hi! I am Mushfik,
+        </div>
         <TypeWriterText
           className={
-            "text-6xl hero-text bg-clip-text pb-9 after:content-['|'] "
+            "text-2xl md:text-3xl lg:text-5xl hero-text bg-clip-text pb-9 after:content-['|'] "
           }
           lines={tags}
           typeDelay={100}
